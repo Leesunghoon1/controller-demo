@@ -1,0 +1,18 @@
+package com.example.demo.web;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class QueryPathController {
+	
+	@GetMapping("/chichen")
+	public String chickenQuery(String type) {
+		
+	}
+	
+	@GetMapping("/chichen/{type}") //{} 데이터를 전달을 받는거
+	public String chickenPath() {
+		
+	}
+}

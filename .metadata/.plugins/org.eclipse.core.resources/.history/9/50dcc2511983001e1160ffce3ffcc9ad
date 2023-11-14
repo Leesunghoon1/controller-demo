@@ -1,0 +1,5 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEN-INF/views/
+      suffix: .jsp

@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: utf-8
+      enabled: true
+
+
+spring:
+  mvc:
+    view:
+      prefix: /WEN-INF/views/
+      suffix: .jsp
