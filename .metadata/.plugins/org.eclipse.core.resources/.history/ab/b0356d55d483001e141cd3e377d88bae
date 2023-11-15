@@ -1,0 +1,29 @@
+package com.example.demo.web;
+
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.demo.domain.User;
+
+@Controller
+public class JavaToJspController {
+	
+	@GetMapping("/jsp/java")
+	public String jspToJava() {
+		return "b";
+	}
+	
+	
+	@GetMapping("/jsp/java/model")
+	public String jspToJavaToModel(Model model) {
+		
+		User user = new User();
+		user.setUsername("ssar");
+		model.addAttribute("username", user.getUsername());
+		
+		return "e";
+	}
+}
